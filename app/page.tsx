@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main className="min-h-screen w-full bg-gray-900 text-white">
 
-      {/* Nav Section */}
+      {/* nav_Section */}
 <nav className="
        sticky top-0  
        w-full  
@@ -12,12 +12,12 @@ export default function Home() {
        z-50">
   <div className="max-w-4xl mx-auto flex items-center justify-between">
     
-    {/* Logo*/}
+    {/* logo_Section*/}
     <a href="#" className="text-xl font-bold tracking-wide text-white hover:text-pink-400 transition">
       Zef<span className="text-pink-600">.dev</span>
     </a>
 
-    {/* Nav Links */}
+    {/* nav_Links */}
     <div className="flex items-center gap-6 text-xl text-gray-300">
       <a href="#about" className="hover:text-pink-600 transition font-bold">
         About
@@ -38,7 +38,7 @@ export default function Home() {
 
      <h1 className="text-4xl text-center justify-center font-bold mt-2">About</h1>
 
-      {/* Hero Section */} 
+      {/* hero_Section */} 
   <section className="
        border border-pink-600
        p-20 
@@ -66,9 +66,9 @@ export default function Home() {
     </div>
   </section>
 
-      {/* Tech Stack Section */}
+      {/* tech_stack_Section */}
       <section className="mb-20 mt-25 px-100 border border-pink-800 p-6 rounded-xl bg-slate-900">
-       <h2 className="text-2xl font-bold mb-20 mt-20 text-center">Tech Stack</h2>
+       <h1 className="text-2xl font-bold mb-20 mt-20 text-center">Tech Stack</h1>
         <div className="grid gap-6">
             <div className="mt-4 flex gap-5 justify-center mb-20">
               <span className="text-xl bg-blue-900 text-blue-300 px-2 py-1 rounded">Java</span>
@@ -81,14 +81,35 @@ export default function Home() {
        </div>
       </section>
 
-      {/* Projects Section */}
-
-
-
-
-
-      {/* Socials Section */}
-      
+      {/* projects_Section */}
+    <section className="mb-20 mt-25 px-100 border border-pink-800 p-6 rounded-xl bg-slate-900">
+      <div>
+        <h1 className="text-2xl font-bold mb-10 mt-10 text-center">Projects</h1>
+         <p className="text-white text-lg text-center">
+          I currently dont have any projects to showcase, but I am actively working on building my portfolio and will be adding projects soon.
+         </p>
+      </div>
+    </section>
+      {/* socials_Section */}
+      <section className="mb-20 mt-25 border border-pink-800 p-6 rounded-xl bg-slate-900 ">
+         <h1 className="text-2xl font-bold mb-10 mt-10 text-center">Socials</h1>
+        <div className="gap-6 flex flex-row items-center justify-center">
+          <a href="https://github.com/zefkevinmontera" 
+          target="_blank" rel="noopener noreferrer" className="
+          text-xl 
+          bg-black 
+          text-white
+          px-2 py-1 
+          rounded">GitHub</a>
+          <a href="https://github.com/zefkevinmontera" 
+          target="_blank" rel="noopener noreferrer" className="
+          text-xl 
+          bg-blue-900
+          text-white-300 
+          px-2 py-1 
+          rounded">Facebook</a>
+        </div>
+      </section>
     </main>
   );
 }
