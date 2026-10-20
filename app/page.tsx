@@ -19,16 +19,16 @@ export default function Home() {
 
     {/* nav_Links */}
     <div className="flex items-center gap-6 text-xl">
-      <a href="#about" className="hover:text-pink-600 transition font-bold">
+      <a href="#about" className="hover:text-pink-600 transition font-bold text-white">
         About
       </a>
-      <a href="#techstack" className="hover:text-pink-600 transition font-bold">
+      <a href="#techstack" className="hover:text-pink-600 transition font-bold text-white">
         Tech Stack
       </a>
-      <a href="#projects" className="hover:text-pink-600 transition font-bold">
+      <a href="#projects" className="hover:text-pink-600 transition font-bold text-white">
         Projects
       </a>
-      <a href="#contact" className="hover:text-pink-600 transition font-bold">
+      <a href="#contact" className="hover:text-pink-600 transition font-bold text-white">
         Contact
       </a>
     </div>
@@ -41,7 +41,7 @@ export default function Home() {
       {/* about_Section */} 
  <section id="about" className="scroll-mt-24 mb-20 px-6">
   
-  <h1 className="text-4xl text-center font-bold mb-8 text-white">About</h1>
+  <h1 className="text-4xl text-center font-bold mb-8 text-white hover:text-pink-600 transition">About</h1>
 
   <div className="border border-pink-600 p-35 rounded-lg bg-slate-900 flex flex-col md:flex-row items-center justify-between gap-6 mx-auto">
     <div>
@@ -68,7 +68,7 @@ export default function Home() {
 
      <section id="techstack" className="scroll-mt-24 mb-20 px-6">
   
-  <h1 className="text-4xl text-center font-bold mb-8 text-white">Tech Stack</h1>
+  <h1 className="text-4xl text-center font-bold mb-8 text-white hover:text-pink-600 transition">Tech Stack</h1>
 
   <div className="p-40 mx-auto border border-pink-800 p-8 rounded-xl bg-slate-900">
     <div className="flex flex-wrap gap-4 justify-center items-center">
@@ -90,24 +90,33 @@ export default function Home() {
     <section id="projects"
      className="scroll-mt-24 mb-20 px-6">
 
-         <h1 className="text-4xl text-center font-bold mb-8 text-white">Projects</h1>
+         <h1 className="text-4xl text-center font-bold mb-8 text-white hover:text-pink-600 transition">Projects</h1>
 
-      <div className=" p-40 mx-auto border border-pink-800 p-8 rounded-xl bg-slate-900">
-         <h1 className="text-xl font-bold mb-4 mr-">World Wonders</h1>
-         <h2 className="text-lg mb-4">A web application that showcases the wonders of the world, providing information and images for each wonder.</h2>
+      <div className=" p-40 mx-auto border border-pink-800 p-8 rounded-xl bg-slate-900 mx-auto">
+
+       <div className="container  text-left border border-pink-600 p-8 mb-4 rounded-lg content-center bg-slate-900">
+         <h1 className="text-3xl font-bold mb-4 text-white  font-bold">World Wonders</h1>
+         <h2 className="text-xl text-gray-300 font-bold text-pink-500">Built with: HTML and CSS</h2>
+         <a href="https://github.com/zefkevinmontera/first_website.git" 
+            target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+            View Project
+         </a>
+        </div>
+
       </div>
 
     </section>
 
       {/* contact_Section */}
       <section id="contact"
-      className="mb-20 mt-25 border border-pink-800 p-6 rounded-xl bg-slate-900 ">
+      className="scroll-mt-24 mb-20 px-6 ">
 
-         <h1 className="text-2xl font-bold mb-10 mt-10 text-center">Contact</h1>
-        <div className="gap-6 flex flex-row items-center justify-center">
+         <h1 className="text-4xl text-center font-bold mb-8 text-white hover:text-pink-600 transition">Contact</h1>
+
+        <div className="p-40 mx-auto border border-pink-800 p-8 rounded-xl bg-slate-900 gap-4 flex flex-col md:flex-row items-center justify-center">
 
           <a href="https://github.com/zefkevinmontera" 
-          target="_blank" rel="noopener noreferrer" className="
+          target="_blank" rel="noopener noreferrer" className=" 
           text-xl 
           bg-black 
           text-white
