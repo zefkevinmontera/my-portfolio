@@ -45,7 +45,7 @@ export default function Home() {
   
   <h1 className="text-4xl text-center font-bold mb-8 text-white">About</h1>
 
-  <div className="border border-pink-600 p-35 rounded-lg bg-slate-900 flex flex-col md:flex-row items-center justify-between gap-6 mx-auto">
+  <div className="border border-pink-600 p-35 rounded-lg bg-gray-900 flex flex-col md:flex-row items-center justify-between gap-6 mx-auto">
     <div>
       <h2 className="text-gray-400 text-2xl font-bold mb-4">Hello! I am</h2>
       <h3 className="text-3xl mb-4 font-bold text-white">Zef Kevin A. Montera</h3>
@@ -97,7 +97,7 @@ export default function Home() {
 
 
        {/* World Explorer */}
-        <div className="border border-pink-600 p-6 rounded-lg bg-slate-800">
+        <div className="border border-pink-600 p-6 rounded-lg bg-black-900 mb-6 mt-6">
          <h1 className="text-white text-xl font-bold mb-4">World Explorer</h1>
          <div className="flex flex-wrap gap-4 justify-start items-center mb-4">
           <h2 className="text-lg mb-4 mt-4 text-gray-400">Built with:</h2>
@@ -110,7 +110,7 @@ export default function Home() {
           text-lg 
           bg-black
           border border-pink-600
-          text-white
+          text-pink-600
           px-2 py-1 
           rounded">View Project</a>
         </div> 
@@ -131,7 +131,7 @@ export default function Home() {
           target="_blank" rel="noopener noreferrer" className="
           text-xl 
           bg-black 
-          text-white
+          text-gray-500
           px-2 py-1 
           rounded">GitHub</a>
 
@@ -139,7 +139,7 @@ export default function Home() {
           target="_blank" rel="noopener noreferrer" className="
           text-xl 
           bg-blue-900
-          text-white 
+          text-blue-400
           px-2 py-1 
           rounded">Facebook</a>
 
@@ -147,7 +147,7 @@ export default function Home() {
           target="_blank" rel="noopener noreferrer" className="
           text-xl 
           bg-blue-400
-          text-white 
+          text-blue-200
           px-2 py-1 
           rounded">LinkedIn</a>
 
