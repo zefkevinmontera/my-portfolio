@@ -131,7 +131,7 @@ export default function Home() {
 
          <h1 className=" font-pixel text-2xl text-center  mb-8 text-white">Contact</h1>
 
-        <div className="gap-6 flex flex-row items-center justify-center p-40 mx-auto border-b border-gray-800 p-8 bg-zinc-900">
+        <div className="gap-6 flex flex-row items-center justify-center p-40 mx-auto border-b border-gray-800 bg-zinc-900">
 
           <a href="https://github.com/zefkevinmontera" 
           target="_blank" rel="noopener noreferrer" className="
