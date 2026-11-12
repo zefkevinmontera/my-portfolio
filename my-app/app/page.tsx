@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="min-h-screen w-full bg-zinc-900 font-sans">
+    <main className="min-h-screen w-full bg-zinc-900 font-pixel">
 
 
       {/* nav_Section */}
@@ -26,32 +26,36 @@ export default function Home() {
       <a href="#about" className="hover:text-white transition text-zinc-500">
         ABOUT
       </a>
+
       <a href="#techstack" className="hover:text-white transition text-zinc-500">
         TECH STACK
       </a>
+
       <a href="#projects" className="hover:text-white transition text-zinc-500">
         PROJECTS
       </a>
+
       <a href="#contact" className="hover:text-white transition text-zinc-500">
         CONTACT
       </a>
-      <a href="https://drive.google.com/file/d/15eQJTc5xAjmpFzkGNf_jk6OXQ81RQNTI/view?usp=sharing"
+      
+      <a href="https://drive.google.com/file/d/1QvCRPBCa9x7Yk3hvffEJuPL9qyEV5gYE/view?usp=sharing"
      target="_blank" rel="noopener noreferrer"
       className=" text-white border border-zinc-700 px-2 py-2 rounded-4xl">
         RESUME
       </a>
-
+      
     </div>
   </div>
 </nav>
 
      
       {/* about_Section */} 
- <section id="about" className="scroll-mt-24 mb-20 px-6 py-6">
+ <section id="about" className="scroll-mt-24 mb-20 px-6 py-6 border-b border-zinc-700">
   
   <h1 className=" font-pixel text-2xl text-center  mb-8 text-white">About</h1>
 
-<div className="font-mono border-b border-zinc-700 p-6 md:p-40 flex flex-col md:flex-row items-center justify-between gap-6 mx-auto">
+<div className="font-mono p-6 md:p-40 flex flex-col md:flex-row items-center justify-between gap-6 mx-auto">
     <div>
       <h2 className="text-2xl mb-4 font-pixel text-white">Zef Kevin A. Montera</h2>
       <h3 className="text-zinc-500 text-xl mb-4">Second Year BSIT Student|Web Developer</h3>
@@ -64,7 +68,7 @@ export default function Home() {
       <img 
         src="/profile.jpg" 
         alt="Zef Kevin A. Montera" 
-        className="w-56 h-72 object-cover rounded-4xl border border-zinc-700"
+        className="w-56 h-72 object-cover rounded-2xl border border-zinc-700"
       />
     </div>
   </div>
@@ -73,11 +77,11 @@ export default function Home() {
 
 
       {/* tech_stack_Section */}
-<section id="techstack" className="scroll-mt-24 mb-20 px-6 py-6">
+<section id="techstack" className="scroll-mt-24 mb-20 px-6 py-6 border-b border-zinc-700">
   
   <h1 className=" font-pixel text-2xl text-center text-white">Tech Stack</h1>
 
-  <div className="p-6 md:p-40 mx-auto border-b border-zinc-700 font-mono">
+  <div className="p-6 md:p-40 mx-auto font-mono">
 
         <h1 className="font-bold text-2xl text-white py-8">Languages & Frameworks:</h1>
     <div className="flex flex-wrap gap-4 items-center">
