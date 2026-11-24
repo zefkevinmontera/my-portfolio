@@ -103,7 +103,7 @@ export function Sidebar({
           </button>
 
           <a
-            href="https://drive.google.com/file/d/1QvCRPBCa9x7Yk3hvffEJuPL9qyEV5gYE/view?usp=sharing"
+            href="https://drive.google.com/file/d/1tYqn6uxmhRtm26PPvSJCb7Jx2AlPryck/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 h-8 rounded-lg text-xs font-medium flex items-center justify-center gap-1 hover:opacity-85 transition-opacity"

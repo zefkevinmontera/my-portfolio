@@ -5,6 +5,7 @@ import { ScrollCogBar } from "@/components/ScrollCogBar";
 import { Sidebar } from "@/components/Sidebar";
 import { Technologies } from "@/components/Technologies";
 import { FeaturedProjects } from "@/components/FeaturedProjects";
+import { BlueprintLifeBg } from "@/components/BlueprintLifeBg";
 
 type WorkflowStepId = "spec" | "scaffold" | "audit" | "ship";
 
@@ -39,7 +40,7 @@ const WORKFLOW_STEPS: WorkflowStep[] = [
     title: "Architecture & Spec",
     summary: "I define the data model, routes, and constraints before writing a single prompt.",
     humanRole: "Decide database tables, auth rules, component hierarchy, and edge cases.",
-    aiRole: "Stress-test the plan and suggest simpler data structures or API patterns.",
+    aiRole: "Stress test the plan and suggest simpler data structures or API patterns.",
     tools: ["Next.js App Router", "Supabase Schema", "Claude / Gemini"],
     realExample:
       "For Tome, I mapped out the Google Books API response shape and Supabase RLS policies first so AI-generated queries matched the real schema.",
@@ -49,7 +50,7 @@ const WORKFLOW_STEPS: WorkflowStep[] = [
     step: "02",
     title: "Prompt & Scaffold",
     summary: "Use AI to eliminate repetitive boilerplate and build working prototypes fast.",
-    humanRole: "Write scoped, context-rich prompts targeting one feature or component at a time.",
+    humanRole: "Write scoped, context rich prompts targeting one feature or component at a time.",
     aiRole: "Generate TypeScript interfaces, Tailwind layouts, and CRUD handlers rapidly.",
     tools: ["Gemini", "Claude", "ChatGPT", "VS Code"],
     realExample:
@@ -73,7 +74,7 @@ const WORKFLOW_STEPS: WorkflowStep[] = [
     summary: "Deploy early to production, test on real devices, and ship clean commits.",
     humanRole: "Configure environment variables, verify live builds, and iterate based on real usage.",
     aiRole: "Help draft documentation, edge-case test checklists, and quick performance tweaks.",
-    tools: ["Vercel", "GitHub", "Lighthouse"],
+    tools: ["Vercel", "GitHub"],
     realExample:
       "Both featured projects are live on Vercel with fast load times and continuous GitHub deployment.",
   },
@@ -263,10 +264,7 @@ export default function Home() {
       <ScrollCogBar />
 
       {/* Architectural Blueprint Grid Background */}
-      <div
-        aria-hidden="true"
-        className="fixed inset-0 -z-10 pointer-events-none bg-blueprint-grid"
-      />
+      <BlueprintLifeBg />
 
       {/* Mobile Header (< lg) */}
       <header className="lg:hidden sticky top-0 z-40 border-b border-[var(--border)] bg-[var(--bg)]/85 backdrop-blur-md">
@@ -358,9 +356,9 @@ export default function Home() {
                   className="animate-fade-up text-base sm:text-lg text-[var(--muted)] leading-relaxed max-w-xl"
                   style={{ animationDelay: "190ms" }}
                 >
-                  Building fast, production-ready websites with Next.js,
+                  Building fast, production ready websites with Next.js,
                   TypeScript, and Supabase. I pair solid web fundamentals 
-                  with modern AI tooling to ship cleaner apps, faster.
+                  with modern AI tooling to ship cleaner websites, faster.
                 </p>
 
                 <div
